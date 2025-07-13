@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="LUSD: Localized Update Score Distillation for Text-Guided Image Editing">
+  <meta name="keywords" content="LUSD, score distillation sampling, text-guided image editing, diffusion model">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LUSD: Localized Update Score Distillation for Text-Guided Image Editing</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="shortcut icon" href="favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+
+
+  <section class="publication-header">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">LUSD: Localized Update Score Distillation for Text-Guided Image
+              Editing</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://sincostanx.github.io/">Worameth Chinchuthakun</a><sup>*1,2</sup>,</span>
+              <span class="author-block">
+                <a href="https://tossatree.com/">Tossaporn Saengja</a><sup>*1,3</sup>,</span>
+              <span class="author-block">
+                <a href="">Nontawat Tritrong</a><sup>1</sup>,
+              </span>
+              <br>
+              <span class="author-block">
+                <a href="">Pitchaporn Rewatbowornwong</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://pkhungurn.github.io/">Pramook Khungurn</a><sup>4</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://www.supasorn.com/">Supasorn Suwajanakorn</a><sup>1</sup>,
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>VISTEC</span> &nbsp &nbsp
+              <span class="author-block"><sup>2</sup>Siam Commercial Bank</span> &nbsp &nbsp
+              <span class="author-block"><sup>3</sup>Faculty of Medicine Siriraj Hospital</span> &nbsp &nbsp
+              <span class="author-block"><sup>4</sup>Pixiv</span> <br>
+              <span class="author-block"><sup>*</sup>Equal contributions</span>
+            </div>
+
+            <h3 class="is-5 conference">ICCV 2025</h3>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2212."
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2503.11054" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <!-- <span class="link-block"> -->
+                <!--   <a href="https://youtu.be/heWXQdIjSzs" class="external-link button is-normal is-rounded is-dark"> -->
+                <!--     <span class="icon"> -->
+                <!--       <i class="fab fa-youtube"></i> -->
+                <!--     </span> -->
+                <!--     <span>Video</span> -->
+                <!--   </a> -->
+                <!-- </span> -->
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/sincostanx/LUSD"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <!-- <span class="link-block">
+                <a href="https://github.com/1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a> -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/teaser.jpg" class="column is-centered has-text-centered" alt="Teaser image." />
+
+        <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video> -->
+        <h2 class="subtitle has-text-centered">
+          <b>LUSD</b> is a novel score distillation technique for object insertion and image editing tasks.
+
+          Compared to existing score distillation methods, (e.g., DDS) and supervised methods (e.g., InstructPix2Pix),
+          LUSD achieves a <b>higher success rate</b> with superior background preservation. Figure shows the best
+          results from state-of-the-art methods, <b>optimized through hyperparameter tuning</b> (highlighted by red
+          boxes), with <b>our results all generated using a single configuration</b>.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="hero is-light is-small">
+    <div class="container is-max-desktop">
+      <br>
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              While diffusion models show promising results in image editing given a target prompt, achieving both
+              prompt fidelity and background preservation remains difficult. Recent works have introduced score
+              distillation techniques that leverage the rich generative prior of text-to-image diffusion models to solve
+              this task without additional fine-tuning. However, these methods often struggle with tasks such as object
+              insertion. Our investigation of these failures reveals significant variations in gradient magnitude and
+              spatial distribution, making hyperparameter tuning highly input-specific or unsuccessful. To address this,
+              we propose two simple yet effective modifications: attention-based spatial regularization and gradient
+              filtering-normalization, both aimed at reducing these variations during gradient updates. Experimental
+              results show our method outperforms state-of-the-art score distillation techniques in prompt fidelity,
+              improving successful edits while preserving the background. Users also preferred our method over
+              state-of-the-art techniques across three metrics, and by 58-64% overall.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paper video. -->
+      <!-- <div class="columns is-centered has-text-centered"> -->
+      <!--   <div class="column is-four-fifths"> -->
+      <!--     <h2 class="title is-3">Video</h2> -->
+      <!--     <div class="publication-video"> -->
+      <!--       <iframe src="https://www.youtube.com/embed/heWXQdIjSzs?si=QDc62aFZW8uLj-e3" frameborder="0" -->
+      <!--         allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+      <!--     </div> -->
+      <!--   </div> -->
+      <!-- </div> -->
+      <!--/ Paper video. -->
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Summary -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Main Idea</h2>
+          <div class="content has-text-justified">
+            <figure class="content has-text-centered">
+              <img src="./static/images/overview.jpg" class="column is-10 is-offset-0 has-text-centered"
+                alt="Method Overview." />
+              <p class="subtitle has-text-centered is-offset-4">
+                <b>Overview.</b> Given an input image and a target prompt, we obtain gradient of the SBP loss and an
+                attention-based mask. With spatial regularization, gradient filtering and normalization, we modify the
+                image to match the prompt.
+              </p>
+            </figure>
+            <h4>Key Ideas</h4>
+
+            <ol>
+              <li>An <b>implicit editing mask</b> derived from attention features to reduce spatial variation of
+                gradient magnitudes</li>
+              <li>A <b>normalization and thresholding</b> mechanism to filter out "counterproductive" gradients with low
+                standard deviation.</li>
+            </ol>
+
+            <h4>Goal and Challenge</h4>
+            <p>
+              Given an input source image and a target prompt describing how the image should be modified, our goal is
+              to modify the image to match the prompt. Our method builds upon score distillation sampling with a simple
+              L2 regularization. We address a key challenge: <b>how to modulate variations in gradient magnitudes and
+                their spatial distributions.</b>
+            </p>
+            <figure class="content has-text-centered">
+              <img src="./static/images/challenge_variation.jpg" class="column is-10 is-offset-0 has-text-centered"
+                alt="Challenge in Gradient Variations" />
+              <img src="./static/images/challenge_sd.jpg" class="column is-10 is-offset-0 has-text-centered"
+                alt="Standard Deviation of Gradient Magnitudes" />
+              <p class="subtitle has-text-centered is-offset-4">
+                <b>Challenge: gradients from score distillation sampling
+                  needs modulation.</b> Gradients vary with different timesteps, noises, prompts, images. Standard
+                deviations of gradient magnitudes can filter less focused and "counterproductive" gradients.
+              </p>
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <br>
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Results</h2>
+        <br>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <h4 class="subtitle is-4">In-the-wild Qualitative Results</h4><br>
+      </div>
+      <div class="columns is-centered">
+        <figure class="column is-10 is-flex is-justify-content-center">
+          <img src="./static/images/qualitative.jpg" alt="Qualitative Results in-the-wild" />
+        </figure>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <h4 class="subtitle is-4">Magicbrush Qualitative Results</h4>
+      </div>
+      <div class="columns is-centered">
+        <figure class="column is-10 is-flex is-justify-content-center">
+          <img src="./static/images/qualitative_magicbrush.jpg" alt="Qualitative Results in Magicbrush Dataset" />
+        </figure>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <h4 class="subtitle is-4">Comparison against Object Insertion Methods</h4>
+      </div>
+      <div class="columns is-centered">
+        <figure class="column is-10 is-flex is-justify-content-center">
+          <img src="./static/images/vs_object_insertion.jpg" alt="Results vs Object Insertion" />
+        </figure>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <h4 class="subtitle is-4">Our components improve DDS results</h4>
+      </div>
+      <div class="columns is-centered">
+        <figure class="column is-10 is-flex is-justify-content-center">
+          <img src="./static/images/dds_improvement.jpg" alt="DDS Improvement" />
+        </figure>
+      </div>
+
+      <!-- carousel -->
+      <!-- <div class="container"> -->
+      <!--   <div id="results-carousel" class="carousel results-carousel"> -->
+      <!--     <div class="item 100"> -->
+      <!--       <video poster="" id="pelvis3" autoplay controls muted loop height="100%"> -->
+      <!--         <source src="./static/videos/refine_8.mp4" type="video/mp4"> -->
+      <!--       </video> -->
+      <!--     </div> -->
+      <!--     <div class="item 4602"> -->
+      <!--       <video poster="" id="pelvis" autoplay controls muted loop height="100%"> -->
+      <!--         <source src="./static/videos/refine_10.mp4" type="video/mp4"> -->
+      <!--       </video> -->
+      <!--     </div> -->
+      <!--     <div class="item 559"> -->
+      <!--       <video poster="" id="pelvis1" autoplay controls muted loop height="100%"> -->
+      <!--         <source src="./static/videos/refine_11.mp4" type="video/mp4"> -->
+      <!--       </video> -->
+      <!--     </div> -->
+      <!--     <div class="item 277"> -->
+      <!--       <video poster="" id="pelvis2" autoplay controls muted loop height="100%"> -->
+      <!--         <source src="./static/videos/refine_13.mp4" type="video/mp4"> -->
+      <!--       </video> -->
+      <!--     </div> -->
+      <!--     <div class="item 100"> -->
+      <!--       <video poster="" id="pelvis3" autoplay controls muted loop height="100%"> -->
+      <!--         <source src="./static/videos/refine_6.mp4" type="video/mp4"> -->
+      <!--       </video> -->
+      <!--     </div> -->
+      <!--   </div> -->
+      <!-- </div> -->
+
+    </div>
+  </section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{chinchuthakun2025lusd,
+          title={LUSD: Localized Update Score Distillation for Text-Guided Image Editing},
+          author={Worameth Chinchuthakun and Tossaporn Saengja and Nontawat Tritrong and Pitchaporn Rewatbowornwong and
+          Pramook Khungurn and Supasorn Suwajanakorn},
+          year={2025},
+          eprint={2503.11054},
+          archivePrefix={arXiv},
+          primaryClass={cs.GR},
+          url={https://arxiv.org/abs/2503.11054},
+          }
+        </code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              We use the website template provided by <a
+                href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
