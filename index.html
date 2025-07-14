@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="shortcut icon" href="favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -125,22 +124,58 @@
     </div>
   </section>
 
+
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <img src="./static/images/teaser.jpg" class="column is-centered has-text-centered" alt="Teaser image." />
+        <div class="columns is-multiline is-centered">
 
+          <div class="column is-one-third">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/7.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ drawing of a coffee cup</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/7_2.png" style="max-height: 150px;">
+            </div>
+          </div>
+
+          <div class="column is-one-third">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/123.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-success is-light is-medium">dog → Dark Soul boss</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/123_1.png" style="max-height: 150px;">
+            </div>
+          </div>
+
+          <div class="column is-one-third">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/120.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ minion</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/120_2.png" style="max-height: 150px;">
+            </div>
+          </div>
+
+        </div>
         <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
         <source src="./static/videos/teaser.mp4"
                 type="video/mp4">
       </video> -->
         <h2 class="subtitle has-text-centered">
-          <b>LUSD</b> is a novel score distillation technique for object insertion and image editing tasks.
-
-          Compared to existing score distillation methods, (e.g., DDS) and supervised methods (e.g., InstructPix2Pix),
-          LUSD achieves a <b>higher success rate</b> with superior background preservation. Figure shows the best
-          results from state-of-the-art methods, <b>optimized through hyperparameter tuning</b> (highlighted by red
-          boxes), with <b>our results all generated using a single configuration</b>.
+          <strong>LUSD</strong> is a novel score distillation technique for object insertion and image editing tasks.
+          <br>
+          Based on Stable Diffusion 1.5, <em>without any additional training</em>, and using <em>a single
+            configuration</em>.
         </h2>
       </div>
     </div>
@@ -243,87 +278,515 @@
       <div class="container is-max-desktop">
 
         <div class="columns is-centered has-text-centered">
-          <h2 class="title is-3">Results</h2>
+          <h2 class="title is-3">In-the-wild Results</h2>
         </div>
 
-        <div class="columns is-centered has-text-centered">
-          <h4 class="subtitle is-4">In-the-wild Qualitative Results</h4>
-        </div>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/124.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ helicopter</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/124_2.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/152.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-success is-light is-medium">notebook → drawing of pikachu</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/152_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/107.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-success is-light is-medium">coffee → matcha</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/107_0.png" style="max-height: 150px;">
+            </div>
+          </div>
 
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <img src="./static/images/qualitative.jpg" class="responsive-image" alt="Qualitative Results in-the-wild" />
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/32.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ lightning</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/32_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/109.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-success is-light is-medium">food → wagyu steak</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/109_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/111.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ stylish sunglasses</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/111_2.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/113.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ bird</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/113_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/115.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ straw</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/115_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/116.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ kite in the sky</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/116_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/126.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ small boat</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/126_1.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/127.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ party hat</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/127_4.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/132.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ glasses</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/132_1.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/135.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-warning is-light is-medium">meatballs → chrome balls</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/135_2.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/139.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ lantern</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/139_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/148.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ painting</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/148_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/157.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ google logo</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/157_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/15.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ flying airplane</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/15_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/165.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ lamp</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/165_4.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/166.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ bracelet</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/166_4.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/1.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ glasses</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/1_4.png" style="max-height: 150px;">
+            </div>
+          </div>
+
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/168.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ camel</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/168_1.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/174.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ rabbit</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/174_0.png" style="max-height: 150px;">
+            </div>
           </div>
         </div>
 
-        <div class="columns is-centered has-text-centered">
-          <h4 class="subtitle is-4">Magicbrush Qualitative Results</h4>
-        </div>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/187.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ corgi</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/187_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/24.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ seafood</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/24_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/94.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ dragon</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/94_3.png" style="max-height: 150px;">
+            </div>
+          </div>
 
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <img src="./static/images/qualitative_magicbrush.jpg" class="responsive-image"
-              alt="Qualitative Results in Magicbrush Dataset" />
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/175.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ horse</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/175_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/176.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ rainbow</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/176_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/178.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ long red necktie</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/178_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/17.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ jam</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/17_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/18.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-warning is-light is-medium">blonde hair</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/18_1.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/23.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ suitcase</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/23_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/32.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ thunder</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/32_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/33.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ burger flag</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/33_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/40.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-success is-light is-medium">lake → lava</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/40_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/42.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ blindfold</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/42_3.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/43.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-warning is-light is-medium">blue eyes</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/43_1.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/44.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ dining table</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/44_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/46.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-warning is-light is-medium">freeze the lake</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/46_1.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/51.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ hot air balloon</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/51_4.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/52.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ sun</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/52_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/54.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ vase</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/54_3.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/67.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ vase</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/67_4.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/6.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ hat</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/6_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/92.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ sunglasses</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/92_0.png" style="max-height: 150px;">
+            </div>
+          </div>
+          <div class="item 100">
+            <div class="box has-text-centered">
+              <p><strong>Input</strong></p>
+              <img src="./static/images/input/99.png" style="max-height: 150px;">
+              <p class="mt-2">
+                <span class="tag is-info is-light is-medium">+ scarf</span>
+              </p>
+              <p class="mt-2"><strong>Output</strong></p>
+              <img src="./static/images/results/99_0.png" style="max-height: 150px;">
+            </div>
           </div>
         </div>
-
-        <div class="columns is-centered has-text-centered">
-          <h4 class="subtitle is-4">Comparison against Object Insertion Methods</h4>
-        </div>
-
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <img src="./static/images/vs_object_insertion.jpg" class="responsive-image"
-              alt="Results vs Object Insertion" />
-          </div>
-        </div>
-
-        <div class="columns is-centered has-text-centered">
-          <h4 class="subtitle is-4">Our components improve DDS results</h4>
-        </div>
-
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <img src="./static/images/dds_improvement.jpg" class="responsive-image" alt="DDS Improvement" />
-          </div>
-        </div>
-
       </div>
-    </div>
   </section>
-
-
-  <!-- carousel -->
-  <!-- <div class="container"> -->
-  <!--   <div id="results-carousel" class="carousel results-carousel"> -->
-  <!--     <div class="item 100"> -->
-  <!--       <video poster="" id="pelvis3" autoplay controls muted loop height="100%"> -->
-  <!--         <source src="./static/videos/refine_8.mp4" type="video/mp4"> -->
-  <!--       </video> -->
-  <!--     </div> -->
-  <!--     <div class="item 4602"> -->
-  <!--       <video poster="" id="pelvis" autoplay controls muted loop height="100%"> -->
-  <!--         <source src="./static/videos/refine_10.mp4" type="video/mp4"> -->
-  <!--       </video> -->
-  <!--     </div> -->
-  <!--     <div class="item 559"> -->
-  <!--       <video poster="" id="pelvis1" autoplay controls muted loop height="100%"> -->
-  <!--         <source src="./static/videos/refine_11.mp4" type="video/mp4"> -->
-  <!--       </video> -->
-  <!--     </div> -->
-  <!--     <div class="item 277"> -->
-  <!--       <video poster="" id="pelvis2" autoplay controls muted loop height="100%"> -->
-  <!--         <source src="./static/videos/refine_13.mp4" type="video/mp4"> -->
-  <!--       </video> -->
-  <!--     </div> -->
-  <!--     <div class="item 100"> -->
-  <!--       <video poster="" id="pelvis3" autoplay controls muted loop height="100%"> -->
-  <!--         <source src="./static/videos/refine_6.mp4" type="video/mp4"> -->
-  <!--       </video> -->
-  <!--     </div> -->
-  <!--   </div> -->
-  <!-- </div> -->
-
 
 
   <section class="section" id="BibTeX">
@@ -331,7 +794,8 @@
       <h2 class="title">BibTeX</h2>
       <pre><code>@misc{chinchuthakun2025lusd,
           title={LUSD: Localized Update Score Distillation for Text-Guided Image Editing},
-          author={Worameth Chinchuthakun and Tossaporn Saengja and Nontawat Tritrong and Pitchaporn Rewatbowornwong and
+          author={Worameth Chinchuthakun and Tossaporn Saengja and Nontawat Tritrong and Pitchaporn Rewatbowornwong
+          and
           Pramook Khungurn and Supasorn Suwajanakorn},
           year={2025},
           eprint={2503.11054},

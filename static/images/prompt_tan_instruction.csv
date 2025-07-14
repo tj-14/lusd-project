@@ -1,0 +1,190 @@
+img_path,source_prompt,target_prompt,instruction
+beach.jpg,a beach,a beach and an umbrella,add an umbrella
+boxer.jpg,a boxer,a boxer wearing a sunglasses,add sunglasses
+cat_dog.jpg,a cat,a cat with green eyes,add green eyes
+cat.jpg,a cat and a dog,a cat and a bronze sculpture of a dog,replace dog with a bronze sculpture of a dog
+lemon.jpg,a photo of lemons,a photo of transparent marbles,replace lemons with transparent marbles
+library.jpg,a library with light bulbs,a library with blue light bulbs,change light bulbs to blue
+man.jpg,a photo of a man,a photo of a man wearing a hat,add a hat
+notebook.jpg,a notebook,a notebook with a drawing of a coffee cup,add a drawing of a coffee cup
+painting1.jpg,painting,,remove painting
+painting2.jpg,painting,,remove painting
+tiger.jpg,tigers,cats,replace tigers with cats
+waterfall.jpg,,winter,change to winter scene
+beach2.jpg,a beach,a beach and an umbrella,add an umbrella
+savanna.jpg,a tree,a tree and a safari jeep,add a safari jeep
+circus.jpg,a circus tent,a circus tent with a flying airplane,add a flying airplane
+sky.jpg,a photo of sky,a photo of sky with a flying airplane,add a flying airplane
+lighthouse.jpg,a lighthouse,a house,replace lighthouse with a house
+bread.jpg,bread,bread with jam,add jam
+musician.jpg,a musician,a musician with blonde hair,add blonde hair
+statue.jpg,a statue,a statue and a hat,add a hat
+fox.jpg,a fox,a cat,replace fox with a cat
+sky2.jpg,,a bird,add a bird
+woman.jpg,a girl wearing a black t-shirt,a girl wearing a blue t-shirt,change t-shirt color to blue
+bed.jpg,a bed,a bed and a suitcase,add a suitcase
+pizza.jpg,pizza,seafood pizza,add seafood
+man2.jpg,a man wearing a shirt,a man wearing a leather jacket,change shirt to leather jacket
+pancake.jpg,pancakes,pancakes dripping with syrup,add syrup
+cake.jpg,a cake,a cake with a candle,add a candle
+vegetable.jpg,stir-fried vegetables,fried rice,replace stir-fried vegetables with fried rice
+man3.jpg,a man sitting at a table,a man sitting a table with apples,add apples
+man4.jpg,a man,a man and a backpack,add a backpack
+breakfast.jpg,bacons and a scallion fried egg,,remove breakfast items
+dark_sky.jpg,,thunder,add thunder
+burger.jpg,a burger set,a burger set with a burger flag,add a burger flag
+drawing.jpg,a drawing of a green apple with a red background,a red apple with a green background,change apple color to red and background to green
+river.jpg,a river,a frozen river,freeze the river
+meatball.jpg,meatballs,chrome balls,replace meatballs with chrome balls
+sofa.jpg,a room with a sofa,a room with a red velvet sofa,change sofa to red velvet
+brick_wall.jpg,blue brick walls,reflective walls,change walls to reflective
+street.jpg,nighttime,daytime,change to daytime
+lake3.jpg,a lake,a lake of lava,change lake to lava
+wooden_floor.jpg,a room with wooden floor,a room with carpet,replace wooden floor with carpet
+dog_painting.jpg,a painting of a dog,a painting of a dog wearing a blindfold over its eyes,add a blindfold to the dog
+cat3.jpg,a cat,a cat with blue eyes,add blue eyes
+empty_room.jpg,a room,a room with a dining table,add a dining table
+interior.jpg,,a small bronze statue,add a small bronze statue
+lake2.jpg,a lake,a frozen lake,freeze the lake
+car.jpg,a green car,a red car,change car color to red
+tent.jpg,a tent,a tent with a pillow inside,add a pillow
+desert.jpg,a desert,a desert with red sand,change sand color to red
+baseball.jpg,a baseball,a chromeball,replace baseball with chromeball
+surf.jpg,a man surfing,a man surfing with a hot air balloon at the background,add a hot air balloon in the background
+surf.jpg,a man surfing,a man surfing and a sun,add a sun
+surf.jpg,a man surfing,a man surfing while wearing a hat,add a hat
+table_chair.jpg,two chairs,two chairs and a vase,add a vase
+field.jpg,a woman in a field,a woman in a burning field,set field on fire
+library2.jpg,a library,a library with a hanging chandelier,add a hanging chandelier
+glass_field.jpg,a glass field with a boat,,remove the boat
+ice_skating_boots.jpg,ice skating boots,green ice skating boots,change boots color to green
+girl_mirror.jpg,a woman,a woman wearing a necklace,add a necklace
+hiking_trail.jpg,a girl,a girl and a dragon,add a dragon
+cup_coffee.jpg,a cup of coffee,a cup of green tea,replace coffee with green tea
+bowling_ball.jpg,a rolling bowling ball,a rolling chrome ball,replace bowling ball with chrome ball
+opera_house.jpg,a river,a large ship in the river,add a large ship
+old_statue.jpg,an old statue,an old statue wearing a sunglasses,add sunglasses
+zoo_underwater.jpg,,wearing a google,add goggles
+chinese_lion2.jpg,a chinese lion statue,a chinese lion wearing sunglasses,add sunglasses
+girl.jpg,a girl,a girl standing near a vase,add a vase
+kamakura.jpg,a buddha statue,a buddha statue with a sun in the sky,add a sun
+vending_machine.jpg,vending machines,vending machines and a parcel box,add a parcel box
+under_roof.jpg,,a lamp,add a lamp
+rice_cooker.jpg,a person's hand,a person's hand wearing a wristwatch,add a wristwatch
+beach2.jpg,a beach,a beach and a banana boat,add a banana boat
+sky2.jpg,,a dragon,add a dragon
+sky2.jpg,,doraemon,add Doraemon
+bed.jpg,a bed,a bed and a suitcase,add a suitcase
+river.jpg,a river,the titanic,replace river with the Titanic
+street.jpg,a car,a lamborghini,replace car with Lamborghini
+empty_room.jpg,a room,a room with scandinavian interior,change interior to Scandinavian style
+desert.jpg,a desert,a desert with a titan,add a titan
+kamakura.jpg,a buddha statue,a buddha statue and wukong,add Wukong
+beach2.jpg,a beach,a beach and a banana boat,add a banana boat
+sky2.jpg,,a dragon,add a dragon
+sky2.jpg,,doraemon,add Doraemon
+bed.jpg,a bed,a bed and a suitcase,add a suitcase
+river.jpg,a river,the titanic,replace river with the Titanic
+street.jpg,a car,a lamborghini,replace car with a Lamborghini
+empty_room.jpg,a room,a room with scandinavian interior,add Scandinavian interior design elements
+desert.jpg,a desert,a desert with a titan,add a titan
+kamakura.jpg,a buddha statue,a buddha statue and wukong,add Wukong
+rice_cooker.jpg,a person's hand,a person's hand with a wristwatch,add a wristwatch
+empty_room.jpg,a room,a room with a sofa,add a sofa
+chinese_lion2.jpg,a chinese lion statue,a chinese lion wearing a sunglasses,add sunglasses
+girl_firecracker.jpg,a girl,a girl wearing a wristwatch,add a wristwatch
+hill.jpg,a hill,a dragon on a hill,add a dragon
+piano.jpg,a piano,a piano and a vase,add a vase
+mv.jpg,a room,a room with a clock on the wall,add a clock
+tent.jpg,a tent,a tent and a lantern,add a lantern
+tiger.jpg,tigers,tigers and a lantern,add a lantern
+snowman1.jpg,a snowman,a snowman with a scarf,add a scarf
+snowman2.jpg,a snowman,a snowman with a scarf,add a scarf
+lake3.jpg,a lake,a lake and a ship,add a ship
+sculpture.jpg,a sculpture,a bronze sculpture,change sculpture to bronze
+woman.jpg,a woman,a woman wearing a hat,add a hat
+cat.jpg,a cat,a bronze sculpture of a cat,change cat to bronze sculpture
+gnochi_mirror.jpg,a photo of a cat,a photo of a tiger,change cat to tiger
+zoo_underwater.jpg,,wearing a goggles,add goggles
+zoo_underwater.jpg,,wearing a goggles,add goggles
+coffee_dds.jpg,a cup of coffee,a cup of matcha,replace coffee with matcha
+fine_dining.jpg,food,wagyu steak,replace food with wagyu steak
+lake_mountain.jpg,"a lake, surrounded by snowy mountains","a boat floating on a lake, surrounded by snowy mountains","add a boat"
+husky.jpg,"a siberian husky","a siberian husky wearing stylish sunglasses","add stylish sunglasses"
+elephant.jpg,"an elephant","an elephant wearing a crown","add a crown"
+ocean_sky.jpg,"an ocean with a clear blue sky and a full moon","an ocean with a clear blue sky and a full moon and a bird","add a bird"
+green_lake.jpg,"a lake","a boat floating on a lake","add a boat"
+lemon_tea.jpg,"a glass of lemon tea","a glass of lemon tea with a straw","add a straw"
+surfer.jpg,"two surfers carrying bright blue boards wade into the ocean","two surfers carrying bright blue boards wade into the ocean and a kite in the sky","add a kite in the sky"
+soccer_field.jpg,"a soccer field","a soccer ball on a soccer field","add a soccer ball"
+moke_beach.jpg,"two surfers walk across a sandy beach, carrying their boards","two surfers walk across a sandy beach, carrying their boards and a balloon in the sky","add a balloon in the sky"
+snowy_slope.jpg,"a skier carves down a steep, snowy slope.","a skier carves down a steep, snowy slope escaping the avalanche","add an avalanche"
+chair2.png,"a chair","a chair and a minion","add a minion"
+dog_drawing.jpg,"a drawing of a dog","a drawing of a dog in the game monster hunter","change the dog into Monster Hunter style"
+dog_drawing.jpg,"a drawing of a dog","a drawing of a boss in monster hunter","change the dog to a Monster Hunter boss"
+dog_drawing.jpg,a drawing of a dog,a drawing of a boss in dark soul,"change the dog to a Dark Soul boss"
+beach2.jpg,a beach,a beach and a helicopter,add a helicopter
+snowman2.jpg,a snowman,a snowman wearing a hat,add a hat
+waterfall.jpg,a waterfall,a waterfall with a small boat floating near it,add a small boat
+cat.jpg,a cat,a cat wearing a party hat,add a party hat
+cat.jpg,a cat,a cat wearing a crown,add a crown
+baseball.jpg,a baseball,a baseball with a smile drawing on it,add a smile drawing
+table_chair.jpg,two chairs and a window,two chairs and a window with a hanging curtain,add a hanging curtain
+field.jpg,a woman and a tower,a woman and a burning tower,change tower to burning tower
+girl_mirror.jpg,a girl sitting in front of a mirror,a girl wearing glasses sitting in front of a mirror,add glasses
+cup_coffee.jpg,a cup of coffee,a cup of coffee with a teaspoon,add a teaspoon
+cat_dog.jpg,a cat and a dog,a cat and a dog wearing a crown,add a crown
+meatball.jpg,a fork with meatballs,a fork with chrome balls,swap meatballs with chrome balls
+sofa.jpg,a room,a room with a wall clock,add a wall clock
+brick_wall.jpg,a man wearing a red t-shirt,a man wearing a red t-shirt with a google logo,add a google logo
+lake3.jpg,a small lake,a small lake with a boat floating on it,add a boat
+tent.jpg,a tent,a tent with a lantern,add a lantern
+car.jpg,a green car in front of a lake,a green car in front of a lake with a boat floating on it,add a boat
+house.png,a house,a house and a bicycle,add a bicycle
+light_mist.png,a woman,a woman wearing a hat,add a hat
+river.png,a frozen river,a river in summer,change season to summer
+times_square.png,Times Square,a unicorn in Times Square,add a unicorn
+restaurant2.png,food,hamburger,replace food with a hamburger
+teddy_bear.png,a teddy bear,a teddy bear wearing a crown,add a crown
+girl_mirror.png,a girl standing in front of a mirror,a girl wearing sunglasses standing in front of a mirror,add sunglasses
+empty_room.jpg,an empty room,an empty room with a painting hanging on the wall,add a painting
+hiking_trail.jpg,a woman,a woman wearing a tall hat,add a tall hat
+kamakura.jpg,a buddha statue,a golden buddha statue,change to a golden buddha statue
+lighthouse.jpg,a lighthouse,Eiffel Tower,replace lighthouse with Eiffel Tower
+notebook.jpg,a notebook,a masterpiece drawing of pikachu,replace notebook with a drawing of pikachu
+teddy_bear.png,a teddy bear,a vase near a teddy bear,add a vase
+notebook.jpg,a scratchbook,a drawing of a coffee cup on a scratchbook,add a drawing of a coffee cup
+under_roof.jpg,,a lamppost,add a lamppost
+sky2.jpg,a roof,a bird on a roof,add a bird
+brick_wall.jpg,a man wearing a red t-shirt,a man wearing a red t-shirt with a google logo,add a google logo
+lighthouse.jpg,a lighthouse,a lighthouse and a spaceship in the sky,add a spaceship in the sky
+kamakura.jpg,a buddha statue,a hulk statue,swap buddha statue with hulk statue
+cup_coffee.jpg,a cup of coffee,a cup of coffee with a teaspoon inside the cup,add a teaspoon inside the cup
+kamakura.jpg,a buddha statue,a buddha statue fused with the Hulk,fuse buddha statue with Hulk
+kamakura.jpg,a buddha statue,a buddha statue fused with Hulk,fuse buddha statue with Hulk
+kamakura.jpg,a buddha statue in a meditative pose,a buddha statue in a meditative pose fused with Hulk,fuse buddha statue with Hulk in meditative pose
+burger.jpg,a burger set,a burger set with a toothpick holding a decorative flag on top,add a toothpick with a decorative flag
+mv.jpg,musicians playing instruments inside a room,musicians playing instruments inside a room with a lamp,add a lamp
+rice_cooker.jpg,a person's hand,a person's hand with a bracelet,add a bracelet
+girl_firecracker.jpg,a girl,a girl with a hat,add a hat
+desert.jpg,a desert,a desert with a camel,add a camel
+tuktuk.png,a street at night,a street at night with a flying airplane,add a flying airplane
+hand.png,hands,hands wearing gloves,add gloves
+vase.png,a vase,roses inside a vase,add roses
+scooter.png,a person riding a scooter,a person riding a scooter and a turtle walking at the walkway,add a turtle walking at the walkway
+sphinx.png,a sphinx,a sphinx wearing fashionable sunglasses,add fashionable sunglasses to the sphinx
+walkway_kyoto.png,a walkway,a walkway and a rabbit,add a rabbit
+chateau.png,interior of a chateau,a horse standing inside interior of a chateau,add a horse inside the chateau
+waterfall_dds.png,a waterfall,a waterfall with a rainbow,add a rainbow to the waterfall
+window.png,a window,a window with a hanging curtain,add a hanging curtain to the window
+cat_paw.png,a cat,a cat wearing a long red necktie,add a long red necktie to the cat
+cup_coffee.jpg,a cup of coffee,"a cup of coffee with a teaspoon inside, its handle resting on the rim","add a teaspoon inside the cup, resting on the rim"
+green_lake.jpg,a lake with an island,a lake with an island with a boat floating near it,add a boat floating near the island
+green_lake.jpg,a lake with an island,a lake with an island with a small boat floating near it,add a small boat floating near the island
+sculpture.jpg,a sculpture of a man,a sculpture of a man wearing a hat,add a hat to the sculpture
+street.jpg,,the moon,replace with the moon
+river.jpg,a river,a frozen river and a spaceship in the sky,add ice to the river and a spaceship in the sky
+river.jpg,a river,a river and a spaceship in the sky,add a spaceship in the sky
+glass_field.jpg,a glass field with a sun,,
+castle2.jpg,castle,castle and corgi,add a corgi to the castle
+sketch.jpg,,the thinker,replace with the thinker
